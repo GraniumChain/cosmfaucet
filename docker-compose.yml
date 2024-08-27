@@ -14,5 +14,5 @@ services:
         echo "start run faucet."
         /app/server --config-file /app/config/config.yml
     ports:
-      - "8080:8080"
+      - "2222:2222"
       - "9092:9092"
