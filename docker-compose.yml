@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  faucet:
+    build:
+      context: ..
+    restart: always
+    volumes:
+      - ./configs:/app/config/
+    command:
+      - /bin/sh
+      - -c
+      - |
+        echo "start run faucet."
+        /app/server --config-file /app/config/config.yml
+    ports:
+      - "8080:8080"
+      - "9092:9092"
