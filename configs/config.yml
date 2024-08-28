@@ -5,8 +5,7 @@ server:
   grpc:
     port: 9092
   limit:
-    enabled: true
-    period: 86400
+    enabled: false
 chains:
   - name: "subnetwork"
     key_name: "cosmos"
